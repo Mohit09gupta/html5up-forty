@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			margin-top: 0;
+			color: #555;
+		}
+		input[type=text], input[type=number], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		label {
+			font-weight: bold;
+		}
+        a {
+	    display: inline-block;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Payment Details</h1>
+		<label for="cardholder-name">Cardholder Name</label>
+		<input type="text" id="cardholder-name" name="cardholder-name" placeholder="Enter the name on your card">
+		<label for="card-number">Card Number</label>
+		<input type="number" id="card-number" name="card-number" placeholder="Enter your card number">
+		<label for="expiry-date">Expiry Date</label>
+		<input type="text" id="expiry-date" name="expiry-date" placeholder="MM / YY">
+		<label for="cvv">CVV</label>
+		<input type="number" id="cvv" name="cvv" placeholder="Enter the 3-digit code on the back of your card">
+		<label for="amount">Amount</label>
+		<input type="text" id="amount" name="amount" placeholder="Enter the amount to be paid">
+        <a href="index.html" class="button-link">Pay now</a>
+	</form>
+</body>
+</html>

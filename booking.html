@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bus Ticket Booking</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			margin-top: 0;
+			color: #555;
+		}
+		input[type=text], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		.proceed-button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+		.proceed-button:hover {
+			background-color: #45a049;
+		}
+        a {
+	    display: inline-block;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Bus Ticket Booking</h1>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name">
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" placeholder="Enter your email">
+		<label for="from">From</label>
+		<input type="text" id="from" name="from" placeholder="Enter your departure location">
+		<label for="to">To</label>
+		<input type="text" id="to" name="to" placeholder="Enter your destination">
+		<label for="date">Date of Travel</label>
+		<input type="text" id="date" name="date" placeholder="Enter the date of travel">
+		<label for="seats">Number of Seats</label>
+		<select id="seats" name="seats">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select>
+        <a href="payments.html">Proceed to pay</a>
+	</form>
+</body>
+</html>
